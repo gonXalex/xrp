@@ -1,0 +1,125 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-small {
+  margin-top: 1.5rem !important; }
+
+.u-margin-top-medium {
+  margin-top: 4rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+.hero {
+  height: 85vh;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0.1em; }
+  .hero__content {
+    display: flex;
+    height: 85vh;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .hero__title {
+    font-size: 7rem;
+    font-weight: 900; }
+  .hero__sub {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 500; }
+  .hero__list {
+    display: flex;
+    text-decoration: none;
+    font-weight: 500; }
+  .hero__item {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    position: relative; }
+  .hero__item::before {
+    content: "";
+    position: absolute;
+    top: 3;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-image: url(../img/svg/check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block; }
+
+.header {
+  padding-top: 3rem; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  align-items: center; }
+  .navbar__logo {
+    font-size: 3rem; }
+  .navbar__list {
+    list-style: none;
+    display: flex; }
+  .navbar__item {
+    position: relative; }
+  .navbar__item::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.5s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s; }
+  .navbar__item:hover::before, .navbar__item--actived::before {
+    transform: scaleX(1); }
+  .navbar__item:active::before {
+    background-color: gray; }
+  .navbar__link:visited, .navbar__link:link {
+    display: block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: black;
+    text-transform: capitalize; }
+
+.container {
+  width: 114rem;
+  margin: 0 auto; }
