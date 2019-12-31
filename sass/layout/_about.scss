@@ -1,0 +1,19 @@
+.about {
+	&__title {
+		display: grid;
+		font-size: 4rem;
+		color: black;
+		align-items: center;
+		font-weight: 900;
+		grid-template-columns: 1fr max-content 1fr;
+		grid-column-gap: 1.5rem;
+
+		&::before,
+		&::after {
+			content: "";
+			height: 1px;
+			display: block;
+			background-color: rgba(black, 0.5);
+		}
+	}
+}

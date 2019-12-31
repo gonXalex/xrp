@@ -3,3 +3,34 @@ body {
 	font-weight: 400;
 	line-height: 1.7;
 }
+%heading {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.1rem;
+}
+.heading-1 {
+	@extend %heading;
+	font-size: 4.5rem;
+	color: black;
+	line-height: 1;
+	letter-spacing: 0.1rem;
+}
+
+.heading-2 {
+	@extend %heading;
+	font-size: 4rem;
+	font-style: italic;
+}
+
+.heading-3 {
+	@extend %heading;
+	font-size: 2rem;
+	color: black;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.heading-4 {
+	@extend %heading;
+	font-size: 1.4rem;
+}
