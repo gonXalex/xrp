@@ -12,12 +12,12 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.7; }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
-  font-family: "Lato", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   letter-spacing: 0.1rem; }
 
@@ -39,6 +39,12 @@ body {
 
 .heading-4 {
   font-size: 1.4rem; }
+
+.section-title {
+  font-size: 5rem;
+  color: black;
+  text-align: center;
+  font-weight: 900; }
 
 .u-center-text {
   text-align: center !important; }
@@ -64,14 +70,23 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 11111;
+  padding-top: 0; }
+
 .hero {
-  height: 85vh;
+  height: 90vh;
   text-align: center;
   line-height: 1;
-  letter-spacing: 0.1em; }
+  letter-spacing: 0.1em;
+  position: relative; }
   .hero__content {
     display: flex;
-    height: 85vh;
+    height: 100vh;
     width: 90%;
     margin: 0 auto;
     justify-content: center;
@@ -106,15 +121,29 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: block; }
+  .hero__icon {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: 6.5rem;
+    height: 6.5rem;
+    display: block;
+    fill: black;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 50%;
+    transform: translateY(-50%) translateX(-50%); }
 
 .header {
-  padding-top: 3rem; }
+  padding: .5rem 0;
+  background-color: white; }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   font-size: 1.4rem;
-  align-items: center; }
+  align-items: center;
+  font-weight: 500; }
   .navbar__logo {
     font-size: 3rem; }
   .navbar__list {
@@ -145,22 +174,26 @@ body {
     text-transform: capitalize; }
 
 .container {
-  width: 114rem;
+  max-width: 114rem;
   margin: 0 auto; }
 
-.about__title {
-  display: grid;
-  font-size: 4rem;
-  color: black;
-  align-items: center;
-  font-weight: 900;
-  grid-template-columns: 1fr max-content 1fr;
-  grid-column-gap: 1.5rem; }
-  .about__title::before, .about__title::after {
-    content: "";
-    height: 1px;
-    display: block;
-    background-color: rgba(0, 0, 0, 0.5); }
+.about {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 10rem 0;
+  letter-spacing: 0.1em; }
+  .about__title {
+    font-size: 5rem;
+    color: black;
+    text-align: center;
+    font-weight: 900; }
+
+.team {
+  padding: 10rem 0;
+  letter-spacing: 0.1em; }
+  .team__sub {
+    font-size: 1.8rem;
+    text-align: center; }
 
 .features {
   display: grid;
@@ -173,15 +206,60 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  letter-spacing: 0.1em; }
   .feature__icon {
     fill: black;
     width: 4.5rem;
     height: 4.5rem;
-    grid-row: 1 / span 2;
     transform: translateY(-1rem); }
     .feature__icon:not(:last-child) {
       margin-right: 2rem; }
   .feature__text {
+    font-size: 1.6em;
+    text-align: justify;
+    font-weight: 500;
+    margin-top: 2rem; }
+
+.cards {
+  margin-top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-gap: 2rem;
+  text-align: center; }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 4rem 1rem;
+  transition: all .3s; }
+  .card__img {
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+    display: block;
+    object-fit: cover; }
+  .card__name {
+    font-size: 2.8rem;
+    font-weight: 900; }
+  .card__job {
     font-size: 1.6rem;
-    text-align: justify; }
+    font-weight: 500; }
+  .card__text {
+    margin-top: 2rem;
+    font-size: 1.4rem; }
+  .card__social {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center; }
+  .card__icon {
+    height: 2rem;
+    width: 2rem; }
+    .card__icon:not(:last-child) {
+      margin-right: 1.5rem; }
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }

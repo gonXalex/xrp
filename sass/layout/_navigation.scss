@@ -1,11 +1,13 @@
 .header {
-	padding-top: 3rem;
+	padding: .5rem 0;
+	background-color: white;
 }
 .navbar {
 	display: flex;
 	justify-content: space-between;
 	font-size: 1.4rem;
 	align-items: center;
+	font-weight: 500;
 
 	&__logo {
 		font-size: 3rem;
