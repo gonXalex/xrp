@@ -3,7 +3,7 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
 	//grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
-	grid-gap: 2rem;
+	grid-gap: 3rem;
 	text-align: center;
 }
 
@@ -12,14 +12,14 @@
 	flex-direction: column;
 	align-items: center;
 	border-radius: 3px;
-	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
+	//box-shadow: 0 .5rem 1rem rgba($primary-color, 0.15);
 	padding: 4rem 1rem;
 	transition: all .3s;
 
 	&__img {
-		width: 17rem;
-		height: 17rem;
-		border-radius: 50%;
+		width: 100%;
+		height: 30rem;
+		//border-radius: 50%;
 		display: block;
 		object-fit: cover;
 	}
@@ -40,9 +40,11 @@
 		display: flex;
 		justify-content: center;
 	}
+
 	&__icon {
 		height: 2rem;
 		width: 2rem;
+		transition: fill .2s;
 		&:not(:last-child) {
 			margin-right: 1.5rem;
 		}
@@ -50,9 +52,11 @@
 
 	&:hover {
 		transform: scale(1.1);
-		box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
+		box-shadow: 0 .5rem 1rem rgba($primary-color, 0.15);
 	}
 
 	&:hover &__icon {
+		fill: #006e98;
+		color: red;
 	}
 }

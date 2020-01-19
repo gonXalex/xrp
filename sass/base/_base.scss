@@ -13,3 +13,45 @@ html {
 body {
 	box-sizing: border-box;
 }
+
+.btn {
+	width: 90%;
+	border-radius: 0.3rem;
+	background-color: #333333;
+	color: #f2f2f2;
+	border: 2px solid #333333;
+
+	&:focus {
+		outline: none;
+	}
+	&,
+	&:link,
+	&:visited {
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 1.5rem 4rem;
+		display: inline-block;
+		transition: all .2s;
+		position: relative;
+		font-size: 1.6rem;
+		//change for the <button> element
+		border: none;
+		cursor: pointer;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		display: inline-block;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		transition: all .2s;
+		background-color: rgba(white, 0);
+	}
+
+	&:hover:before {
+		background-color: rgba(white, 0.1);
+	}
+}

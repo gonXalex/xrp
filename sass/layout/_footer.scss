@@ -1,1 +1,9 @@
+.footer {
+	background-color: black;
+	padding: 20rem 0;
+	color: white;
 
+	&__copyright {
+		text-align: center;
+	}
+}
