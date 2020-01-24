@@ -1,23 +1,31 @@
 body {
 	//font-family: "Lato", sans-serif;
 	//font-family: 'Montserrat', sans-serif;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+	font-family: 'Merriweather', serif;
+	font-weight: 500;
 	line-height: 1.7;
+	color: #4F4E4E;
 }
 %heading {
 	//font-family: "Lato", sans-serif;
 	//font-family: 'Montserrat', sans-serif;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 	letter-spacing: 0.1rem;
+	color: #3B3B3B;
 }
+
 .heading-1 {
 	@extend %heading;
-	font-size: 4.5rem;
-	color: black;
+	// font-size: 4.5rem;
+	// color: black;
 	line-height: 1;
 	letter-spacing: 0.1rem;
+
+	//ADDED
+	font-size: 7rem;
+	font-weight: 900;
+
 }
 
 .heading-2 {

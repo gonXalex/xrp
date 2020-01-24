@@ -43,20 +43,22 @@ body {
     background-color: rgba(255, 255, 255, 0.1); }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  line-height: 1.7; }
+  font-family: 'Merriweather', serif;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #4F4E4E; }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.1rem; }
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: #3B3B3B; }
 
 .heading-1 {
-  font-size: 4.5rem;
-  color: black;
   line-height: 1;
-  letter-spacing: 0.1rem; }
+  letter-spacing: 0.1rem;
+  font-size: 7rem;
+  font-weight: 900; }
 
 .heading-2 {
   font-size: 4rem;
