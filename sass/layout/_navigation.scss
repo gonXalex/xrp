@@ -1,8 +1,18 @@
 .header {
 	padding: .5rem 0;
 	background-color: white;
-	box-shadow: 0 0.2rem 0.5rem rgba($primary-color, .3);
+	//box-shadow: 0 0.2rem 0.5rem rgba($primary-color, .3);
+
+	&__fixed {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 11111;
+		box-shadow: 0 0.2rem 0.5rem rgba($primary-color, .3);
+		padding-top: 0;
+	}
 }
+
 .navbar {
 	display: flex;
 	justify-content: space-between;
