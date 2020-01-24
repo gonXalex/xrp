@@ -1,9 +1,46 @@
 .footer {
 	background-color: black;
-	padding: 20rem 0;
+	padding-top: 13rem;
 	color: white;
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__nav {
+		padding: 0 3rem;
+		flex: 1;
+	}
+
+	&__title {
+		font-size: 2rem;
+	}
+
+	&__list {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		margin-top: 2rem;
+	}
+
+	&__item {
+		font-size: 1.4rem;
+		color: $gray-color;
+		cursor: pointer;
+		&:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__item:hover {
+		color: white;
+	}
 
 	&__copyright {
+		padding: 4rem 0;
+		font-size: 1.6rem;
+		background-color: #2b2b2b;
+		margin-top: 3rem;
 		text-align: center;
+		color: $gray-color;
 	}
 }

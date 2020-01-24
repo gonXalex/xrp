@@ -22,7 +22,7 @@
     </head>
 
     <body>
-        <header class="header fixed">
+        <header class="header ">
             <div class="container">
                 <nav class="navbar">
                     <div class="navbar__logo">XPR</div>
@@ -265,18 +265,16 @@
                         <div class="contact__title title">
                                 Contactanos
                         </div>
+                        <div class="team__sub">Uno de nuestros expertos en espacios de trabajo se pondrá en contacto contigo utilizando el método indicado en tus preferencias de comunicación. Uno de nuestros expertos en espacios de trabajo se pondrá en contacto </div>
                         <div class="contact__form">
                             <form action="#" class="form">
-                                <div class="u-margin-bottom-medium">
-                                    
-                                </div>
                                 <div class="form__group">
                                     <input type="text" class="form__input" placeholder="Full name" id="name" required>
                                     <!-- <label for="name"  class="form__label">First name</label> -->
                                 </div>
                                 <div class="form__group">
-                                    <input type="text" class="form__input" placeholder="Full name" id="name" required>
-                                    <!-- <label for="name"  class="form__label">Last name</label> -->
+                                    <input type="text" class="form__input" placeholder="Asunto" id="affair" required>
+                                    <!-- <label for="affair"  class="form__label">First name</label> -->
                                 </div>
                                 <div class="form__group">
                                     <input type="email" class="form__input" placeholder="Email address" id="email" required>
@@ -289,11 +287,7 @@
                                     <button class="btn">Enviar</button>
                                 </div>
                             </form>
-                        </div>
-                        <div class="contact__img">
-                            <svg class="contact__icon">
-                                <use href="img/sprite.svg#icon-email"></use>
-                            </svg>
+                            <div id="map"></div>
                         </div>
                     </div>
                 </div>
@@ -303,19 +297,58 @@
             <div class="container">
                 <div class="footer__content">
                     <nav class="footer__nav">
-                        <h2>Telefonos </h2>
+                        <h2 class="footer__title">XPR</h2>
+                        <ul class="footer__list">
+                            <li class="footer__item">Software solutions according to your needs. Let the Software Accelerate yours process with Desktop & Mobile Browsers solutions</li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__nav">
+                        <h2 class="footer__title">Recent Posts</h2>
+                        <ul class="footer__list">
+                                <li class="footer__item">Gallery Post Format</li>
+                                <li class="footer__item">Possession of my entire soul</li>
+                                <li class="footer__item">Audio Post Format</li>
+                                <li class="footer__item">Quote Post Format</li>
+                                <li class="footer__item">I sink under the weight</li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__nav">
+                        <h2 class="footer__title">Telefonos</h2>
                         <ul class="footer__list">
                             <li class="footer__item">809-899-9121</li>
                             <li class="footer__item">809-219-9123</li>
                             <li class="footer__item">809-459-4569</li>
                         </ul>
                     </nav>
-                    <p class="footer__copyright">
-                        &copy; Copyrigth 2020, Feel free to use this proyect for your own.
-                    </p>
+                    <nav class="footer__nav">
+                        <h2 class="footer__title">Contactanos</h2>
+                        <ul class="footer__list">
+                            <li class="footer__item"> Address : 12 Main Street Pt. London</li>
+                            <li class="footer__item">contact@xrps.com</li>
+                        </ul>
+                    </nav>
+                    
                 </div>
             </div>
+            <p class="footer__copyright">
+                    &copy; Copyrigth 2020, Feel free to use this proyect for your own.
+                </p>
         </footer>
         
+
+        <script>
+            function initMap() {
+                // The location of Uluru
+                var uluru = {lat: -25.344, lng: 131.036};
+                // The map, centered at Uluru
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 5, center: uluru});
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxRUvwSWz53_I4FqgeFhbp63chFgXgUXI&callback=initMap">
+        </script>
     </body>
 </html>
