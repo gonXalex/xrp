@@ -379,14 +379,14 @@ body {
     font-weight: 900; }
 
 .services-container {
-  overflow: hidden;
-  perspective: 2px; }
+  overflow: hidden; }
 
 .services-title {
   font-size: 4rem;
-  width: 48%;
+  padding-left: 30px;
+  text-align: left;
+  width: 45%;
   margin-right: auto;
-  margin-top: -8rem;
   margin-bottom: 5rem; }
 
 .services-features {
@@ -448,13 +448,14 @@ body {
 
 .features-title {
   font-size: 4rem;
-  width: 48%;
-  margin-left: auto;
-  margin-top: -8rem;
-  margin-bottom: 5rem; }
+  padding-left: 30px;
+  margin-bottom: 5rem;
+  text-align: left;
+  width: 45%;
+  margin-left: auto; }
 
 .features-img-container {
-  background-image: url("../img/background-img-4.jpg");
+  background-image: url("../img/img_back2.jpeg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;

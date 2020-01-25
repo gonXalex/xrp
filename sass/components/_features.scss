@@ -5,15 +5,19 @@
 
 .features-title {
 	font-size: 4rem;
-	width: 48%;
+	// width: 48%;
+	padding-left: 30px;
 	// float: right;
-	margin-left: auto;
-	margin-top: -8rem;
+	// margin-left: auto;
+	// margin-top: -8rem;
 	margin-bottom: 5rem;
+	text-align: left;
+	width: 45%;
+	margin-left: auto;
 }
 
 .features-img-container {
-	background-image: url('../img/background-img-4.jpg');
+	background-image: url('../img/img_back2.jpeg');
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
