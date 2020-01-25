@@ -6,6 +6,7 @@ body {
 	line-height: 1.7;
 	color: #4F4E4E;
 }
+
 %heading {
 	//font-family: "Lato", sans-serif;
 	//font-family: 'Montserrat', sans-serif;
@@ -15,7 +16,18 @@ body {
 	color: #3B3B3B;
 }
 
-.heading-1 {
+%body {
+
+	font-family: 'Merriweather', serif;
+	font-weight: 500;
+	line-height: 1.7;
+	color: #4F4E4E;
+
+}
+
+// TITLES
+
+.hero-title {
 	@extend %heading;
 	// font-size: 4.5rem;
 	// color: black;
@@ -28,28 +40,52 @@ body {
 
 }
 
-.heading-2 {
-	@extend %heading;
-	font-size: 4rem;
-	font-style: italic;
-}
-
-.heading-3 {
-	@extend %heading;
-	font-size: 2rem;
-	color: black;
-	font-weight: 700;
-	text-transform: capitalize;
-}
-
-.heading-4 {
-	@extend %heading;
-	font-size: 1.4rem;
-}
-
 .section-title {
+	@extend %heading;
 	font-size: 5rem;
-	color: black;
 	text-align: center;
 	font-weight: 900;
 }
+
+.sub-section-title-1 {
+	@extend %heading;
+	font-size: 2.8rem;
+	font-weight: 700;
+}
+
+.sub-section-title-2 {
+	@extend %heading;
+	font-size: 2rem;
+	font-weight: 700;
+	text-transform: capitalize;
+	text-align: left;
+}
+
+.hero-body {
+	@extend %body;
+	font-size: 3rem;
+	line-height: 1;
+	font-weight: 500;
+}
+
+// BODYS
+
+.section-body {
+	@extend %body;
+	font-size: 1.8rem;
+	text-align: center;
+
+}
+
+.sub-section-body-1 {
+	@extend %body;
+	font-size: 1.6rem;
+}
+
+.sub-section-body-2 {
+	@extend %body;
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+
+// 

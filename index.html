@@ -15,6 +15,8 @@
         <!--<link rel="stylesheet" href="css/icon-font.css">-->
 
         <link rel="stylesheet" href="css/style.css">
+
+        <link rel="stylesheet" type="text/css" href="css/edd_changes_temp/our_project_section.css">
         
         <link rel="icon" type="image/svg" href="img/svg/flag.svg">
       
@@ -22,7 +24,7 @@
     </head>
 
     <body>
-        <header class="header ">
+        <header class="header__fixed" id="nav_bar">
             <div class="container">
                 <nav class="navbar">
                     <div class="navbar__logo">XPR</div>
@@ -38,10 +40,10 @@
         <div class="hero">
             <div class="container">
                 <div class="hero__content">
-                    <div class="heading-1">
+                    <div class="hero-title">
                         Software solutions according to your needs
                     </div>
-                    <div class="hero__sub u-margin-top-medium">
+                    <div class="hero-body u-margin-top-medium">
                         Let the Software Accelerate yours process with Desktop & Mobile Browsers solutions
                     </div>
                     <ul class="hero__list u-margin-top-medium">
@@ -59,121 +61,190 @@
                 </div>                
             </div>
         </div>
-        <section class="about">
-                <div class="container">
-                        <!-- <div class="about__title">What you need to know About Us</div> -->
-                        <div class="features">
-                            <!-- <div class="feature">
-                                <div class="feature__icon-box">
-                                    <svg class="feature__icon">
-                                        <use href="img/sprite.svg#icon-node-dot-js"></use>
-                                    </svg>
-                                    <svg class="feature__icon">
-                                        <use href="img/sprite.svg#icon-apple"></use>
-                                    </svg>
-                                    <svg class="feature__icon">
-                                            <use href="img/sprite.svg#icon-windows"></use>
-                                    </svg>
-                                </div>
-                                <h4 class="feature__title feature__title heading-3">Mobile Development</h4>
-                                <p class="feature__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus.
-                                </p>
-                            </div>
-                            <div class="feature">
-                                <svg class="feature__icon">
-                                    <use href="img/sprite.svg#icon-android"></use>
-                                </svg>
-                                <h4 class="feature__title heading-3">Web Development</h4>
-                                <p class="feature__text">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.</p>
-                            </div>
-                            <div class="feature">
-                                <svg class="feature__icon">
-                                    <use href="img/sprite.svg#icon-apple"></use>
-                                </svg>
-                                <h4 class="feature__title heading-3">Native destopks Apps</h4>
-                                <p class="feature__text">Tenetur distinctio necessitatibus pariatur voluptatibus quidem consequatur harum necessitatibus pariatur.</p>
-                            </div> -->
-                            <div class="feature">
-                                <svg class="feature__icon">
-                                    <use href="img/sprite.svg#icon-css3"></use>
-                                </svg>
-                                <h4 class="feature__title heading-3">Lastes techonlogies</h4>
-                                <p class="feature__text">Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="feature">
-                                <svg class="feature__icon">
-                                    <use href="img/sprite.svg#icon-windows"></use>
-                                </svg>
-                                <h4 class="feature__title heading-3">Full Desktop Aplications</h4>
-                                <p class="feature__text">Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio necessitatibus pariatur voluptatibus.</p>
-                            </div>
-                            <div class="feature">
-                                <svg class="feature__icon">
-                                    <use href="img/sprite.svg#icon-webpack"></use>
-                                </svg>
-                                <h4 class="feature__title heading-3">Modular Programing</h4>
-                                <p class="feature__text">Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae. necessitatibus pariatur voluptatibus</p>
-                            </div>
-                        </div>
+        <section class="about about-container">
+            <div class="section-title features-title">Improvisa. Adáptate. Supérate.</div>
+            <div class="container features-container">
+                
+                <!-- <div class="features-img-container">
+                    <img src="img/background-img-1.jpg">
+                </div> -->
+                <div class="features">
+                    <!-- <div class="feature">
+                        <div class="section-title features-title">Improvise. Adapt. Overcome.</div>
+                    </div> -->
+                    <div class="feature">
+                        <!-- <svg class="feature__icon">
+                            <use href="img/svg/007-analytics.svg"></use>
+                        </svg> -->
+                        <img src="img/svg/004-code-1.svg" class="feature__icon">
+                        <h4 class="sub-section-title-2 feature__title">Lastes techonlogies</h4>
+                        <p class="sub-section-body-2 feature__text">Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-        </section>
-
-        <section class="team">
-            <div class="container">
-                <div class="section-title our-works-header-container">
-                    <div class="title">
-                        <h3>Proyectos .</h3>
+                    <div class="feature">
+                        <!-- <svg class="feature__icon">
+                            <use href="img/sprite.svg#icon-windows"></use>
+                        </svg> -->
+                        <img src="img/svg/006-research.svg" class="feature__icon">
+                        <h4 class="sub-section-title-2 feature__title">Full Desktop Aplications</h4>
+                        <p class="sub-section-body-2 feature__text">Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio necessitatibus pariatur voluptatibus.</p>
                     </div>
-                    <div class="description">
-                        <p>Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia. Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia</p>
+                    <div class="feature">
+                        <!-- <svg class="feature__icon">
+                            <use href="img/sprite.svg#icon-webpack"></use>
+                        </svg> -->
+                        <img src="img/svg/008-report.svg" class="feature__icon">
+                        <h4 class="sub-section-title-2 feature__title">Modular Programing</h4>
+                        <p class="sub-section-body-2 feature__text">Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- SOME TEMPORAL DIVIDER -->
+        <section class="works">
+            <div class="container">
+                <!-- AT edd_temp folder -->
+                <div class="section-title center-page-separator">
+                    <h3>Estabilidad, habilidad y calidad</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="services services-container">
+            <div class="section-title services-title">Servicios Que Brindamos</div>
+            <div class="container services-container">
+                
+                <!-- <div class="features-img-container">
+                    <img src="img/background-img-1.jpg">
+                </div> -->
+                <div class="services-features">
+                    <!-- <div class="feature">
+                        <div class="section-title features-title">Improvise. Adapt. Overcome.</div>
+                    </div> -->
+                    <div class="service-feature">
+                        <!-- <svg class="feature__icon">
+                            <use href="img/svg/007-analytics.svg"></use>
+                        </svg> -->
+                        <img src="img/svg/002-graphic.svg" class="feature__icon">
+                        <h4 class="sub-section-title-2 feature__title">Desarrollo Web</h4>
+                        <p class="sub-section-body-2 feature__text">Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="service-feature">
+                        <!-- <svg class="feature__icon">
+                            <use href="img/sprite.svg#icon-windows"></use>
+                        </svg> -->
+                        <img src="img/svg/005-screen.svg" class="feature__icon">
+                        <h4 class="sub-section-title-2 feature__title">Aplicaciones Móviles</h4>
+                        <p class="sub-section-body-2 feature__text">Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio necessitatibus pariatur voluptatibus.</p>
+                    </div>
+                    <div class="service-feature">
+                        <!-- <svg class="feature__icon">
+                            <use href="img/sprite.svg#icon-webpack"></use>
+                        </svg> -->
+                        <img src="img/svg/007-analytics.svg" class="feature__icon">
+                        <h4 class="sub-section-title-2 feature__title">Herramientas de Escritorio</h4>
+                        <p class="sub-section-body-2 feature__text">Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="works">
+            <div class="container">
+                <!-- <div class="our-works-header-container"> -->
+                <div class="section-title">
+                    <h3>Nuestros Proyectos</h3>
+                </div>
+                <div class="section-body">
+                    <p>Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia. Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia</p>
+                </div>
+                <!-- </div> -->
                 
                 <div class="our-project-cards our-works-project-container">
                     <div class="our-project-card">
                         <div class="card-img-container">
                             <img src="public/img/cleanmaster.jpg" alt="clean master proj"  class="card__img">
-                            <span class="card__img-overlay"></span>
+                            <div class="card__img-overlay">
+                                <div class="card__img-overlay-text sub-section-title-2">
+                                    Cleanmaster
+                                </div>
+
+                                <div class="card__img-overlay-icon sub-section-title-2">
+                                    <img src="img/svg/009-link.svg" class="feature__icon">
+                                </div>
+                            </div>
                         </div>
-                        <div class="card__name">CLEANMASTER</div>
-                        <div class="card__job">Analytic app</div>
+                        <div class="sub-section-title-2 u-margin-top-medium">CLEANMASTER</div>
+                        <div class="sub-section-body-2">Analytic app</div>
                         <!-- <p class="card__text">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia. Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia</p> -->
                     </div>
 
                     <div class="our-project-card">
-                        <img src="public/img/giftme.jpg" alt="gift me proj"  class="card__img">
-                        <div class="card__name">GIFTME</div>
-                        <div class="card__job">Give people gift app</div>
+                        <div class="card-img-container">
+                            <img src="public/img/giftme.jpg" alt="gift me proj"  class="card__img">
+                            <div class="card__img-overlay">
+                                <div class="card__img-overlay-text sub-section-title-2">
+                                    GiftMe
+                                </div>
+                                <div class="card__img-overlay-icon sub-section-title-2">
+                                    <img src="img/svg/009-link.svg" class="feature__icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-section-title-2 u-margin-top-medium">GIFTME</div>
+                        <div class="sub-section-body-2">Give people gift app</div>
                         <!-- <p class="card__text">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia. Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia</p> -->
                     </div>
 
                     <div class="our-project-card">
-                        <img src="public/img/someapp1.jpg" alt="some app proj"  class="card__img">
-                        <div class="card__name">SOMEAPP</div>
-                        <div class="card__job">Some random app</div>
+                        <div class="card-img-container">
+                            <img src="public/img/someapp1.jpg" alt="some app proj"  class="card__img">
+                            <div class="card__img-overlay">
+                                <div class="card__img-overlay-text sub-section-title-2">
+                                    RandomLayers
+                                </div>
+                                <div class="card__img-overlay-icon sub-section-title-2">
+                                    <img src="img/svg/009-link.svg" class="feature__icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-section-title-2 u-margin-top-medium">SOMEAPP</div>
+                        <div class="sub-section-body-2">Some random app</div>
                         <!-- <p class="card__text">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia. Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia</p> -->
                     </div>
 
                     <div class="our-project-card">
-                        <img src="public/img/venmo.jpg" alt="venmo app proj"  class="card__img">
-                        <div class="card__name">VENMO</div>
-                        <div class="card__job">Love spreading app</div>
+                        <div class="card-img-container">
+                            <img src="public/img/venmo.jpg" alt="venmo app proj"  class="card__img">
+                            <div class="card__img-overlay">
+                                <div class="card__img-overlay-text sub-section-title-2">
+                                    Venmo
+                                </div>
+                                <div class="card__img-overlay-icon sub-section-title-2">
+                                    <img src="img/svg/009-link.svg" class="feature__icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-section-title-2 u-margin-top-medium">VENMO</div>
+                        <div class="sub-section-body-2">Love spreading app</div>
                         <!-- <p class="card__text">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia. Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia</p> -->
                     </div>
                 </div>
             </div>
-            
         </section>
 
         <section class="team">
             <div class="container">
-                <div class="team__title section-title title">Meet our team</div>
-                <div class="team__sub">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia. Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia </div>
+                <div class="section-title">
+                    <h3>Conoce Nuestro Equipo</h3>
+                </div>
+                <div class="section-body">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia. Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia </div>
                 <div class="cards">
                     <div class="card">
                         <img src="img/img_1.jpeg" alt="company founder"  class="card__img">
-                        <div class="card__name">Francis Brito</div>
-                        <div class="card__job">Company Founder</div>
+                        <div class="sub-section-title-1 u-margin-top-small">Francis Brito</div>
+                        <div class="sub-section-body-1">Company Founder</div>
                         <!-- <p class="card__text">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia. Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia</p> -->
                         <div class="card__social">
                             <svg class="card__icon">
@@ -193,8 +264,8 @@
 
                     <div class="card">
                         <img src="img/img_2.jpeg" alt="company founder"  class="card__img">
-                        <div class="card__name">Jean Carlos</div>
-                        <div class="card__job">Company Founder</div>
+                        <div class="sub-section-title-1 u-margin-top-small">Jean Carlos</div>
+                        <div class="sub-section-body-1">Company Founder</div>
                         <!-- <p class="card__text">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia. Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia</p> -->
                         <div class="card__social">
                             <svg class="card__icon">
@@ -214,8 +285,8 @@
 
                     <div class="card">
                         <img src="img/img_3.jpeg" alt="company founder"  class="card__img">
-                        <div class="card__name">Kendry Grullon</div>
-                        <div class="card__job">Software Developer</div>
+                        <div class="sub-section-title-1 u-margin-top-small">Kendry Grullon</div>
+                        <div class="sub-section-body-1">Software Developer</div>
                         <!-- <p class="card__text">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia. Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia</p> -->
                         <div class="card__social">
                             <svg class="card__icon">
@@ -235,8 +306,8 @@
 
                     <div class="card">
                         <img src="img/img_4.jpeg" alt="company founder"  class="card__img">
-                        <div class="card__name">Luis Sanchez</div>
-                        <div class="card__job">Web Developer</div>
+                        <div class="sub-section-title-1 u-margin-top-small">Luis Sanchez</div>
+                        <div class="sub-section-body-1">Web Developer</div>
                         <!-- <p class="card__text">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia. Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia</p> -->
                         <div class="card__social">
                             <svg class="card__icon">
@@ -262,10 +333,10 @@
         <section class="section__contact">
                 <div class="container">
                     <div class="contact">
-                        <div class="contact__title title">
-                                Contactanos
+                        <div class="section-title contact__title">
+                                <h3>Contactanos</h3>
                         </div>
-                        <div class="team__sub">Uno de nuestros expertos en espacios de trabajo se pondrá en contacto contigo utilizando el método indicado en tus preferencias de comunicación. Uno de nuestros expertos en espacios de trabajo se pondrá en contacto </div>
+                        <div class="section-body">Uno de nuestros expertos en espacios de trabajo se pondrá en contacto contigo utilizando el método indicado en tus preferencias de comunicación. Uno de nuestros expertos en espacios de trabajo se pondrá en contacto </div>
                         <div class="contact__form">
                             <form action="#" class="form">
                                 <div class="form__group">
@@ -297,41 +368,41 @@
             <div class="container">
                 <div class="footer__content">
                     <nav class="footer__nav">
-                        <h2 class="footer__title">XPR</h2>
+                        <h2 class="sub-section-title-1 footer__title">XPR</h2>
                         <ul class="footer__list">
-                            <li class="footer__item">Software solutions according to your needs. Let the Software Accelerate yours process with Desktop & Mobile Browsers solutions</li>
+                            <li class="sub-section-body-1 footer__item">Software solutions according to your needs. Let the Software Accelerate yours process with Desktop & Mobile Browsers solutions</li>
                         </ul>
                     </nav>
                     <nav class="footer__nav">
-                        <h2 class="footer__title">Recent Posts</h2>
+                        <h2 class="sub-section-title-1 footer__title">Recent Posts</h2>
                         <ul class="footer__list">
-                                <li class="footer__item">Gallery Post Format</li>
-                                <li class="footer__item">Possession of my entire soul</li>
-                                <li class="footer__item">Audio Post Format</li>
-                                <li class="footer__item">Quote Post Format</li>
-                                <li class="footer__item">I sink under the weight</li>
+                                <li class="sub-section-body-1 footer__item">Gallery Post Format</li>
+                                <li class="sub-section-body-1 footer__item">Possession of my entire soul</li>
+                                <li class="sub-section-body-1 footer__item">Audio Post Format</li>
+                                <li class="sub-section-body-1 footer__item">Quote Post Format</li>
+                                <li class="sub-section-body-1 footer__item">I sink under the weight</li>
                         </ul>
                     </nav>
                     <nav class="footer__nav">
-                        <h2 class="footer__title">Telefonos</h2>
+                        <h2 class="sub-section-title-1 footer__title">Telefonos</h2>
                         <ul class="footer__list">
-                            <li class="footer__item">809-899-9121</li>
-                            <li class="footer__item">809-219-9123</li>
-                            <li class="footer__item">809-459-4569</li>
+                            <li class="sub-section-body-1 footer__item">809-899-9121</li>
+                            <li class="sub-section-body-1 footer__item">809-219-9123</li>
+                            <li class="sub-section-body-1 footer__item">809-459-4569</li>
                         </ul>
                     </nav>
                     <nav class="footer__nav">
-                        <h2 class="footer__title">Contactanos</h2>
+                        <h2 class="sub-section-title-1 footer__title">Contactanos</h2>
                         <ul class="footer__list">
-                            <li class="footer__item"> Address : 12 Main Street Pt. London</li>
-                            <li class="footer__item">contact@xrps.com</li>
+                            <li class="sub-section-body-1 footer__item"> Address : 12 Main Street Pt. London</li>
+                            <li class="sub-section-body-1 footer__item">contact@xrps.com</li>
                         </ul>
                     </nav>
                     
                 </div>
             </div>
-            <p class="footer__copyright">
-                    &copy; Copyrigth 2020, Feel free to use this proyect for your own.
+            <p class="sub-section-title-1 footer__copyright">
+                    &copy; Copyrigth 2020, SF & Genkai CxA.
                 </p>
         </footer>
         
@@ -349,6 +420,19 @@
         </script>
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxRUvwSWz53_I4FqgeFhbp63chFgXgUXI&callback=initMap">
+        </script>
+        <script type="text/javascript">
+            
+                // let nav = document.querySelector('#nav_bar');
+
+                // window.addEventListener('scroll', function() {
+
+                //     if(window.scrollY === 0) {
+                //         nav.className = "header";
+                //     }else {
+                //         nav.className = "header__fixed";
+                //     }
+                //   });
         </script>
     </body>
 </html>

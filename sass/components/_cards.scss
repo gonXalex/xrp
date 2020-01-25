@@ -53,10 +53,13 @@
 	&:hover {
 		transform: scale(1.1);
 		box-shadow: 0 .5rem 1rem rgba($primary-color, 0.15);
+		background-color: #ffffff;
+
 	}
 
 	&:hover &__icon {
 		fill: #006e98;
 		color: red;
+		cursor: pointer;
 	}
 }
