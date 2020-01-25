@@ -12,6 +12,19 @@
 	margin-bottom: 5rem;
 }
 
+.features-img-container {
+	background-image: url('../img/background-img-4.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	height: 100%;
+	width: 50%;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+
 .features {
 
 	// display: grid;

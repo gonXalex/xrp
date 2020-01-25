@@ -1,6 +1,7 @@
 .hero {
-	height: calc(100vh - 6.5rem);
-	//height: 100vh;
+	// height: calc(100vh - 6.5rem);
+	margin-top: 70px;
+	min-height: 90vh;
 	text-align: center;
 	line-height: 1;
 	letter-spacing: 0.1em;
@@ -8,7 +9,7 @@
 
 	&__content {
 		display: flex;
-		height: 80vh;
+		// height: 80vh;
 		width: 90%;
 		margin: 0 auto;
 		justify-content: center;

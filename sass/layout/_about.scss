@@ -3,14 +3,8 @@
 	width: 100%;
 	padding: 13rem 0;
 	letter-spacing: 0.1em;
-
-	background-image: url('../img/background-img-4.jpg');
-	// background-attachment: fixed;
-	background-origin: border-box;
-	background-repeat: no-repeat;
-	background-size: cover;
-
-	background-position: right 680px bottom 0;
+	position: relative;
+	overflow: hidden;
 
 	&__title {
 		font-size: 5rem;
