@@ -21,10 +21,23 @@
         <link rel="icon" type="image/svg" href="img/svg/flag.svg">
       
         <title>XRP</title>
+
+        <style>
+        @keyframes fade-in {
+            from {opacity: 0; transform: scale(.7,.7)}
+            to {opacity: 1;}
+        }
+        .fade-in-element {
+        animation: fade-in 1s;
+        }
+        .hidden {
+        opacity: 0;
+        }
+        </style>
     </head>
 
     <body>
-        <header class="header__fixed" id="nav_bar">
+        <header class="header header__fixed" id="nav_bar">
             <div class="container">
                 <nav class="navbar">
                     <div class="navbar__logo">XPR</div>
@@ -61,31 +74,35 @@
                 </div>                
             </div>
         </div>
-        <section class="about about-container">
-            <div class="container features-container">
+        <section class="services services-container">
+            <div class="container">
+                <div class="services__side services__side--right">
 
-                <div class="section-title features-title">Sobre Nosotros</div>
-                <div class="features">
-                    <div class="feature">
-                        <img src="img/svg/004-code-1.svg" class="feature__icon">
-                        <h4 class="sub-section-title-2 feature__title">Lastes techonlogies</h4>
-                        <p class="sub-section-body-2 feature__text">Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="feature">
+                    <div class="section-title services__title">Sobre Nosotros</div>
+                    <div class="features">
+                        <div class="feature hidden">
+                            <img src="img/svg/004-code-1.svg" class="feature__icon">
+                            <h4 class="sub-section-title-2 feature__title">Lastes techonlogies</h4>
+                            <p class="sub-section-body-2 feature__text">Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="feature hidden">
 
-                        <img src="img/svg/006-research.svg" class="feature__icon">
-                        <h4 class="sub-section-title-2 feature__title">Full Desktop Aplications</h4>
-                        <p class="sub-section-body-2 feature__text">Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio necessitatibus pariatur voluptatibus.</p>
-                    </div>
-                    <div class="feature">
- 
-                        <img src="img/svg/008-report.svg" class="feature__icon">
-                        <h4 class="sub-section-title-2 feature__title">Modular Programing</h4>
-                        <p class="sub-section-body-2 feature__text">Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae.</p>
+                            <img src="img/svg/006-research.svg" class="feature__icon">
+                            <h4 class="sub-section-title-2 feature__title">Full Desktop Aplications</h4>
+                            <p class="sub-section-body-2 feature__text">Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio necessitatibus pariatur voluptatibus.</p>
+                        </div>
+                        <div class="feature hidden">
+    
+                            <img src="img/svg/008-report.svg" class="feature__icon">
+                            <h4 class="sub-section-title-2 feature__title">Modular Programing</h4>
+                            <p class="sub-section-body-2 feature__text">Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae.</p>
+                        </div>
                     </div>
                 </div>
+
             </div>
-            <div class="features-img-container parallax bg1"></div>
+            <div class="services__img services__img--left services__img--1"></div>
+
         </section>
 
         <!-- SOME TEMPORAL DIVIDER -->
@@ -104,29 +121,35 @@
         </section>
 
         <section class="services services-container">
-            <div class="container services-container">
-                
-                <div class="section-title services-title">Nuestros Servicios</div>
-                <div class="services-features">
-                    <div class="service-feature">
-                        <img src="img/svg/002-graphic.svg" class="feature__icon">
-                        <h4 class="sub-section-title-2 feature__title">Desarrollo Web</h4>
-                        <p class="sub-section-body-2 feature__text">Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="service-feature">
-                        <img src="img/svg/005-screen.svg" class="feature__icon">
-                        <h4 class="sub-section-title-2 feature__title">Aplicaciones Móviles</h4>
-                        <p class="sub-section-body-2 feature__text">Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio necessitatibus pariatur voluptatibus.</p>
-                    </div>
-                    <div class="service-feature">
+            <div class="container">
 
-                        <img src="img/svg/007-analytics.svg" class="feature__icon">
-                        <h4 class="sub-section-title-2 feature__title">Herramientas de Escritorio</h4>
-                        <p class="sub-section-body-2 feature__text">Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae.</p>
+            
+                <div class="services__side">
+                    <div class="section-title services__title">Nuestros Servicios</div>         
+                    <div class="features">
+                        <div class="feature hidden">
+                            <img src="img/svg/002-graphic.svg" class="feature__icon">
+                            <h4 class="sub-section-title-2 feature__title">Desarrollo Web</h4>
+                            <p class="sub-section-body-2 feature__text">Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="feature hidden">
+                            <img src="img/svg/005-screen.svg" class="feature__icon">
+                            <h4 class="sub-section-title-2 feature__title">Aplicaciones Móviles</h4>
+                            <p class="sub-section-body-2 feature__text">Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio necessitatibus pariatur voluptatibus.</p>
+                        </div>
+                        <div class="feature hidden">
+                            <img src="img/svg/007-analytics.svg" class="feature__icon">
+                            <h4 class="sub-section-title-2 feature__title">Herramientas de Escritorio</h4>
+                            <p class="sub-section-body-2 feature__text">Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae.</p>
+                        </div>
+
+                    </div>
                     </div>
                 </div>
-            </div>
-            <div class="services-img-container"></div>
+            </div> 
+            
+            <div class="services__img services__img--2"></div>
+                    
         </section>
 
 
@@ -397,6 +420,34 @@
                 // The marker, positioned at Uluru
                 var marker = new google.maps.Marker({position: uluru, map: map});
             }
+
+            (function() {
+                var elements;
+                var windowHeight;
+
+                function init() {
+                    elements = document.querySelectorAll('.hidden');
+                    windowHeight = window.innerHeight;
+                }
+
+                function checkPosition() {
+                    for (var i = 0; i < elements.length; i++) {
+                    var element = elements[i];
+                    var positionFromTop = elements[i].getBoundingClientRect().top;
+
+                    if (positionFromTop - windowHeight <= 0) {
+                        element.classList.add('fade-in-element');
+                        element.classList.remove('hidden');
+                    }
+                    }
+                }
+
+                window.addEventListener('scroll', checkPosition);
+                window.addEventListener('resize', init);
+
+                init();
+                checkPosition();
+            })();
         </script>
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxRUvwSWz53_I4FqgeFhbp63chFgXgUXI&callback=initMap">
