@@ -1,17 +1,31 @@
 
 .center-page-separator {
 
-  background-color: #2E2E2E;
-  border-radius: 5rem;
+  /*background-color: #2E2E2E;*/
+  /*border-radius: 5rem;*/
   padding: 3rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #F2F2F2;
   width: 50%;
   margin: 0 auto;
+  text-align: center;
 
-  -webkit-box-shadow: 0 20px 4px -17px #A6A6A6;
+  /*-webkit-box-shadow: 0 20px 4px -17px #A6A6A6;*/
 /*   -moz-box-shadow: 0 10px 6px -20px #777;
         box-shadow: 0 10px 6px -20px #777;*/
+}
+
+.center-page-separator-quote {
+  /*width: 100%;*/
+  color: #F2F2F2;
+  font-size: 2rem;
+  /*text-align: center;*/
+  display: inline-block;
+  text-align: right;
+}
+
+.center-page-separator-quote span{
+  font-style: italic;
 }
 
 .our-project-cards {

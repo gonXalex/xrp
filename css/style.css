@@ -364,6 +364,15 @@ body {
 .works {
   padding: 13rem 0;
   letter-spacing: 0.1em; }
+  .works__icon {
+    fill: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    transform: translateY(-1rem);
+    align-self: flex-start;
+    margin-bottom: 1rem; }
+    .works__icon:not(:last-child) {
+      margin-right: 2rem; }
 
 .services {
   background-color: #f2f2f2;
@@ -441,6 +450,11 @@ body {
       height: 2px;
       width: 100%;
       background-color: rgba(28, 28, 28, 0.15); }
+
+.section-divider {
+  padding: 13rem 0;
+  letter-spacing: 0.1em;
+  background-color: #232323; }
 
 .features-container {
   overflow: hidden;
