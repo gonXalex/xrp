@@ -1,48 +1,7 @@
-.features-container {
-	overflow: hidden;
-	perspective: 2px;
-}
-
-.features-title {
-	font-size: 4rem;
-	// width: 48%;
-	padding-left: 30px;
-	// float: right;
-	// margin-left: auto;
-	// margin-top: -8rem;
-	margin-bottom: 5rem;
-	text-align: left;
-	width: 45%;
-	margin-left: auto;
-}
-
-.features-img-container {
-	background-image: url('../img/img_back2.jpeg');
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-
-	height: 100%;
-	width: 50%;
-	top: 0;
-	left: 0;
-	position: absolute;
-}
-
 .features {
-
-	// display: grid;
-	// margin-top: 10rem;
-	// grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-	// gap: 2rem;
-	// align-items: start;
-
 	display: grid;
 	grid-template-rows: repeat(auto-fit, minmax(15rem, 1fr));
-	gap: 5rem;
-	align-items: start;
-	width: 45%;
-	float: right;
+	row-gap: 5rem;
 }
 
 .feature {
@@ -51,7 +10,7 @@
 	flex-direction: column;
 	align-items: center;
 	letter-spacing: 0.1em;
-	padding: 1.5rem 3rem;
+	padding: 1.5rem 0;
 
 	&__icon {
 		fill: black;
