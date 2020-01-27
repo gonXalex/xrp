@@ -14,3 +14,76 @@
 		}
 	}
 }
+
+.works-container {
+  margin-top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-gap: 3rem;
+  text-align: center; 
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+  transition: all .3s; 
+  background-color: #F4F4F4;
+
+}
+
+.work-img-container {
+
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+
+}
+
+.work-img-container img {
+  transition: transform .5s ease;
+  z-index: 2
+}
+
+.work-img-container:hover img {
+  transform: scale(1.1);
+}
+
+.work-img-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .3s ease-out;
+
+    &__text{
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 30%;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    &__icon {
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      color: #FFFFFF;
+      text-align: center;
+      
+    }
+
+}
+
+.work-img-container:hover .work-img-overlay{
+    opacity: 1;
+    cursor: pointer;
+}
+

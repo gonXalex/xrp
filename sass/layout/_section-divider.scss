@@ -3,3 +3,26 @@
 	letter-spacing: 0.1em;
 	background-color: #232323;
 }
+
+
+.section-divider-title {
+  padding: 3rem;
+  font-size: 3rem;
+  color: #F2F2F2;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.section-divider-quote {
+  color: #F2F2F2;
+  font-size: 2rem;
+  display: inline-block;
+  text-align: right;
+}
+
+.section-divider-quote span{
+  font-style: italic;
+
+}
