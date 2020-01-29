@@ -5,12 +5,13 @@
 	line-height: 1;
 	letter-spacing: 0.1em;
 	position: relative;
+	display: flex;
 
 	&__content {
 		display: flex;
-		height: 80vh;
+		//height: 80vh;
 		// padding: 75px 0 0 0;
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 		justify-content: center;
 		align-items: center;
@@ -18,20 +19,33 @@
 	}
 
 	&__title {
+		@extend %heading;
 		font-size: 7rem;
-		font-weight: 900;
 		color: $primary-color;
+		font-weight: 900;
+
+		@media only screen and (max-width: $bp-small) {
+			font-size: 3rem;
+			font-weight: 900;
+		}
 	}
 	&__sub {
-		font-size: 3rem;
+		font-size: 4rem;
 		line-height: 1;
 		font-weight: 500;
+
+		@media only screen and (max-width: $bp-small) {
+			font-size: 1.4rem;
+		}
 	}
 
 	&__list {
 		display: flex;
 		text-decoration: none;
 		font-weight: 500;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
 	}
 
 	&__item {
@@ -40,12 +54,16 @@
 		text-decoration: none;
 		font-size: 1.4rem;
 		position: relative;
+		@media only screen and (max-width: $bp-medium) {
+			padding: .5rem 1rem;
+			//font-size: 1.2rem;
+		}
 	}
 
 	&__item::before {
 		content: "";
 		position: absolute;
-		top: 3;
+		top: 1;
 		left: 0;
 		height: 1.5rem;
 		width: 1.5rem;
@@ -54,6 +72,11 @@
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		display: block;
+
+		@media only screen and (max-width: $bp-medium) {
+			//display: none;
+			left: -6px;
+		}
 	}
 
 	&__icon {
@@ -68,5 +91,12 @@
 		padding: 1rem;
 		border-radius: 50%;
 		transform: translateY(-50%) translateX(-50%);
+		padding: 1rem 1rem;
+
+		@media only screen and (max-width: $bp-small) {
+			width: 4rem;
+			height: 4rem;
+			padding: .5rem .5rem;
+		}
 	}
 }

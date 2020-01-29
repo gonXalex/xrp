@@ -4,25 +4,23 @@ body {
 	font-family: 'Merriweather', serif;
 	font-weight: 500;
 	line-height: 1.7;
-	color: #4F4E4E;
+	color: #4f4e4e;
 }
 
 %heading {
 	//font-family: "Lato", sans-serif;
 	//font-family: 'Montserrat', sans-serif;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
+	//font-weight: 700;
 	letter-spacing: 0.1rem;
-	color: #3B3B3B;
+	color: #3b3b3b;
 }
 
 %body {
-
 	font-family: 'Merriweather', serif;
 	font-weight: 500;
 	line-height: 1.7;
-	color: #4F4E4E;
-
+	color: #4f4e4e;
 }
 
 // TITLES
@@ -33,11 +31,9 @@ body {
 	// color: black;
 	line-height: 1;
 	letter-spacing: 0.1rem;
-
 	//ADDED
 	font-size: 7rem;
 	font-weight: 900;
-
 }
 
 .section-title {
@@ -45,6 +41,11 @@ body {
 	font-size: 5rem;
 	text-align: center;
 	font-weight: 900;
+
+	@media only screen and (max-width: $bp-small) {
+		font-size: 2rem;
+		padding-bottom: 1rem;
+	}
 }
 
 .sub-section-title-1 {
@@ -75,6 +76,9 @@ body {
 	font-size: 1.8rem;
 	text-align: center;
 
+	@media only screen and (max-width: $bp-small) {
+		font-size: 1.2rem;
+	}
 }
 
 .sub-section-body-1 {
@@ -88,4 +92,4 @@ body {
 	font-weight: 400;
 }
 
-// 
+//

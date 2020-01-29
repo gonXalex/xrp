@@ -1,28 +1,37 @@
 .section-divider {
 	padding: 13rem 0;
+
+	@media only screen and (max-width: $bp-medium) {
+		padding: 6rem 0;
+	}
 	letter-spacing: 0.1em;
 	background-color: #232323;
 }
 
-
 .section-divider-title {
-  padding: 3rem;
-  font-size: 3rem;
-  color: #F2F2F2;
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
+	font-size: 3rem;
+	color: #f2f2f2;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
 
+	@media only screen and (max-width: $bp-small) {
+		font-size: 2.5rem;
+	}
 }
 
 .section-divider-quote {
-  color: #F2F2F2;
-  font-size: 2rem;
-  display: inline-block;
-  text-align: right;
+	color: #f2f2f2;
+	font-size: 2rem;
+	display: inline-block;
+	text-align: right;
+
+	@media only screen and (max-width: $bp-small) {
+		font-size: 1.6rem;
+	}
 }
 
-.section-divider-quote span{
-  font-style: italic;
-
+.section-divider-quote span {
+	font-style: italic;
+	font-optical-sizing: inherit;
 }

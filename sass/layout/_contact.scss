@@ -1,5 +1,8 @@
 .section__contact {
 	padding: 13rem 0;
+	@media only screen and (max-width: $bp-small) {
+		padding: 6rem 0;
+	}
 }
 
 .contact {
@@ -15,6 +18,12 @@
 		width: 100%;
 		padding: 6rem;
 		display: flex;
+
+		@media only screen and (max-width: $bp-small) {
+			padding: 0;
+
+			padding-top: 3rem;
+		}
 	}
 	&__title {
 		font-size: 5rem;
@@ -36,14 +45,22 @@
 }
 
 #map {
-	width: 50%;
+	width: 45%;
 	height: 100%;
 	width: 50%;
 	//border-radius: 3px;
+
+	@media only screen and (max-width: $bp-small) {
+		display: none;
+	}
 }
 
 .form {
 	flex: 1;
+	padding-right: 3rem;
+	@media only screen and (max-width: $bp-small) {
+		padding-right: 0;
+	}
 
 	&__group:not(:last-child) {
 		margin-bottom: 2rem;
@@ -56,7 +73,7 @@
 		padding: 1.5rem 2rem;
 		background-color: #f2f2f2;
 		border: none;
-		width: 90%;
+		width: 100%;
 		display: block;
 		transition: all .3s;
 		border-bottom: 3px solid transparent;
@@ -71,6 +88,10 @@
 		&::placeholder {
 			color: #ababab;
 		}
+
+		@media only screen and (max-width: $bp-small) {
+			width: 100%;
+		}
 	}
 
 	&__textarea {
@@ -82,7 +103,7 @@
 		height: 15rem;
 		border: none;
 		//border: 1px solid #666666;
-		width: 90%;
+		width: 100%;
 		display: block;
 		transition: all .3s;
 		border-bottom: 3px solid transparent;
