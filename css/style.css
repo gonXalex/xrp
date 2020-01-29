@@ -374,6 +374,8 @@ body {
     margin-bottom: 1rem; }
     .works__icon:not(:last-child) {
       margin-right: 2rem; }
+  .works__title {
+    font-size: 4rem; }
 
 .works-container {
   margin-top: 7rem;
@@ -381,6 +383,13 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
   grid-gap: 3rem;
   text-align: center; }
+
+.test-class {
+  background-image: url("../public/img/cleanmaster.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%; }
 
 .work {
   display: flex;
@@ -393,7 +402,8 @@ body {
 .work-img-container {
   overflow: hidden;
   z-index: 1;
-  position: relative; }
+  position: relative;
+  display: block; }
 
 .work-img-container img {
   transition: transform .5s ease;

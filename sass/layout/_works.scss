@@ -13,6 +13,28 @@
 			margin-right: 2rem;
 		}
 	}
+
+	&__title {
+		font-size: 4rem;
+	}
+}
+
+.works .container > div {
+	//display: inline-block;
+} 
+
+// .works-header-container {
+
+// 	width: 100%;
+// 	grid-row: 1 / -1;
+// 	grid-column: last-start / last-end;
+// 	padding-left: 5rem;
+
+// 	// margin-right: auto;
+// }
+
+.works-header-container h3 {
+
 }
 
 .works-container {
@@ -20,7 +42,34 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
   grid-gap: 3rem;
-  text-align: center; 
+  text-align: center;
+
+
+  //changes
+
+  // display: grid;
+
+  // // grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  // grid-template-columns: [col-start] repeat(2, 25%) [col-end last-start]  1fr [last-end];
+  // grid-template-rows: 1fr 1fr;
+  // grid-gap: 0.3rem;
+  // // width: 100%;
+  // width: 100%;
+  // // height: 100%;
+  // // border: 1px solid black;
+
+
+
+}
+
+.works-container img {}
+
+.test-class {
+	background-image: url('../public/img/cleanmaster.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
 }
 
 .work {
@@ -31,6 +80,11 @@
   transition: all .3s; 
   background-color: #F4F4F4;
 
+  //changes
+	  // display: flex;
+	  // flex-direction: column;
+  // width: 30%;
+
 }
 
 .work-img-container {
@@ -38,12 +92,17 @@
   overflow: hidden;
   z-index: 1;
   position: relative;
+  display: block;
+  // width: 100%;
+  // height: 100%;
+
+    //changes
 
 }
 
 .work-img-container img {
   transition: transform .5s ease;
-  z-index: 2
+  z-index: 2;
 }
 
 .work-img-container:hover img {
