@@ -26,54 +26,69 @@
                 to {opacity: 1;}
             }
             .fade-in-element {
-            animation: fade-in 1s;
+                animation: fade-in 1s;
             }
             .hidden {
-            opacity: 0;
+                opacity: 0;
             }
         </style>
     </head>
 
     <body>
+        <div class="page-overlay-container"></div>
         <header class="header header__fixed" id="nav_bar">
             <div class="container">
                 <nav class="navbar">
                     <div class="navbar__logo">XPR</div>
                     <ul class="navbar__list">
-                        <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link">About us</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link">projects</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link">contact</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__link">Inicio</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__link">Nosotros</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__link">Servicios</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__link">Proyectos</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__link">Equipo</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__link">Contacto</a></li>
                     </ul>
                     <div class="navbar__button">
                         <span class="navbar__icon"></span>
                     </div>
+
+                    <div class="side-menu">
+                        <ul class="side-menu-list">
+                            <li class="navbar__item side-menu-list__item"><a href="#" class="navbar__link side-menu-list__link">Inicio</a></li>
+                            <li class="navbar__item side-menu-list__item"><a href="#" class="navbar__link side-menu-list__link">Sobre Nosotros</a></li>
+                            <li class="navbar__item side-menu-list__item"><a href="#" class="navbar__link side-menu-list__link">Servicios</a></li>
+                            <li class="navbar__item side-menu-list__item"><a href="#" class="navbar__link side-menu-list__link">Proyectos</a></li>
+                            <li class="navbar__item side-menu-list__item"><a href="#" class="navbar__link side-menu-list__link">Equipo</a></li>
+                            <li class="navbar__item side-menu-list__item"><a href="#" class="navbar__link side-menu-list__link">Contacto</a></li>
+                        </ul>
+                    </div>                    
                 </nav>                
             </div>    
         </header>
-        <div class="hero">
-                <div class="hero__content">
-                    <div class="container">
-                        <div class="hero__title">
-                            Software solutions according to your needs
-                        </div>
-                        <div class="hero__sub u-margin-top-medium">
-                            Let the Software Accelerate yours process with Desktop & Mobile Browsers solutions
-                        </div>
-                        <ul class="hero__list u-margin-top-medium">
-                            <li class="hero__item">You needed</li>
 
-                            <li class="hero__item">Perfect for your bussines</li>
-                            
-                            <li class="hero__item">Fast than you think</li>
-                        </ul>
-                        <div class="hero__arrow">
-                            <svg class="hero__icon">
-                                <use href="img/sprite.svg#icon-chevron-thin-down"></use>
-                            </svg>
-                        </div>
-                    </div>                
-                </div>
+        <div class="hero">
+            <div class="hero__content">
+                <div class="container">
+                    <div class="hero__title">
+                        Software solutions according to your needs
+                    </div>
+                    <div class="hero__sub u-margin-top-medium">
+                        Let the Software Accelerate yours process with Desktop & Mobile Browsers solutions
+                    </div>
+                    <ul class="hero__list u-margin-top-medium">
+                        <li class="hero__item">You needed</li>
+
+                        <li class="hero__item">Perfect for your bussines</li>
+                        
+                        <li class="hero__item">Fast than you think</li>
+                    </ul>
+                    <div class="hero__arrow">
+                        <svg class="hero__icon">
+                            <use href="img/sprite.svg#icon-chevron-thin-down"></use>
+                        </svg>
+                    </div>
+                </div>                
+            </div>
         </div>
         <section class="services services-container">
             <div class="container">
@@ -259,7 +274,7 @@
 
                     <div class="card">
                         <img src="img/img_2.jpeg" alt="company founder"  class="card__img">
-                        <div class="sub-section-title-1 u-margin-top-small">Jean Carlos</div>
+                        <div class="sub-section-title-1 u-margin-top-small">Jean Carlo</div>
                         <div class="sub-section-body-1">Company Founder</div>
                         <!-- <p class="card__text">Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia. Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia</p> -->
                         <div class="card__social">
@@ -399,9 +414,9 @@
             <div>
             <div class="sub-section-title-1 footer__copyright">
                 <div class="container">
-                        <p>
-                                &copy; Copyrigth 2020, SF & Genkai CxA.
-                           </p> 
+                    <p>
+                        &copy; Copyrigth 2020, SF & Genkai CxA.
+                    </p> 
                 </div>
                    
             </div>
@@ -442,11 +457,71 @@
                     }
                 }
 
+
+                function getWidth() {
+
+                    let checkWidth;
+                    let page = document.querySelector('.page-overlay-container');
+                    let sideMenu = document.querySelector('.side-menu');
+                    let sideButton = document.querySelector('.navbar__button');
+                    let sideButtonIcon = document.querySelector('.navbar__icon');
+
+                    checkWidth = Math.max(
+                        document.body.scrollWidth,
+                        document.documentElement.scrollWidth,
+                        document.body.offsetWidth,
+                        document.documentElement.offsetWidth,
+                        document.documentElement.clientWidth
+                    );
+
+                    if(checkWidth > 783) {
+
+                        page.classList.remove("page-overlay");
+                        sideMenu.classList.remove("side-menu-show");
+                        sideButton.classList.remove("navbar-btn");
+                        sideButtonIcon.classList.remove("navbar-icon", "navbar-icon-close");
+                    }
+
+                }
+
+
+                function sideMenuButton() {
+
+                    let checkWidth;
+                    let page = document.querySelector('.page-overlay-container');
+                    let sideMenu = document.querySelector('.side-menu');
+                    let sideButton = document.querySelector('.navbar__button');
+                    let sideButtonIcon = document.querySelector('.navbar__icon');
+
+                    sideButton.addEventListener('click', () => {
+
+                        if(sideMenu.classList.contains("side-menu-show")) {             
+                            
+                            page.classList.remove("page-overlay");
+                            sideMenu.classList.remove("side-menu-show");
+                            sideButton.classList.remove("navbar-btn");
+                            sideButtonIcon.classList.remove("navbar-icon", "navbar-icon-close");
+                            return;
+                        }
+
+                        page.classList.add("page-overlay");
+                        sideMenu.classList.add("side-menu-show");
+                        sideButton.classList.add("navbar-btn");
+                        sideButtonIcon.classList.add("navbar-icon", "navbar-icon-close");
+                        
+                        
+                    });
+                }
+
+
                 window.addEventListener('scroll', checkPosition);
                 window.addEventListener('resize', init);
 
                 init();
                 checkPosition();
+                sideMenuButton();
+                window.addEventListener('resize', getWidth);
+
             })();
 
             

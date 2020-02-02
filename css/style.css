@@ -11,6 +11,17 @@ html {
 body {
   box-sizing: border-box; }
 
+.page-overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(21, 21, 21, 0.7); }
+  @media only screen and (max-width: 50rem) {
+    .page-overlay {
+      display: flex; } }
+
 .btn {
   width: 100%;
   background-color: #333333;
@@ -248,7 +259,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 11111;
+    z-index: 1000;
     box-shadow: 0 1px 0.3rem rgba(28, 28, 28, 0.3);
     padding-top: 0;
     background-color: white; }
@@ -331,12 +342,12 @@ body {
     @media only screen and (max-width: 50rem) {
       .navbar__button {
         display: flex; } }
-  .navbar__button:hover .navbar__icon {
+  .navbar .navbar-btn .navbar-icon {
     background-color: transparent; }
-  .navbar__button:hover .navbar__icon::before {
+  .navbar .navbar-btn .navbar-icon::before {
     top: 0;
     transform: rotate(135deg); }
-  .navbar__button:hover .navbar__icon::after {
+  .navbar .navbar-btn .navbar-icon::after {
     top: 0;
     transform: rotate(-135deg); }
 
@@ -731,3 +742,42 @@ body {
     fill: #006e98;
     color: red;
     cursor: pointer; }
+
+.side-menu {
+  display: none;
+  position: absolute;
+  width: 35%;
+  height: 100vh;
+  background-color: #171717;
+  border-left: 1px solid #fff;
+  top: 0;
+  right: -36%;
+  transition: right .3s ease-in-out; }
+  @media only screen and (max-width: 50rem) {
+    .side-menu {
+      display: flex; } }
+
+.navbar-icon-close, .navbar-icon-close::after, .navbar-icon-close::before {
+  background-color: white; }
+
+.side-menu-show {
+  right: 0; }
+
+.side-menu-list {
+  padding-top: 6.5rem; }
+  .side-menu-list__item {
+    text-decoration: none;
+    list-style: none;
+    padding: 1rem 1rem 0 1rem;
+    font-size: 1.6rem; }
+  .side-menu-list__item::before {
+    left: 5%;
+    width: 0;
+    transform: none;
+    transition: all ease-in-out .3s;
+    background: none repeat scroll 0 0 #ffffff; }
+  .side-menu-list__item:hover::before {
+    transform: none;
+    width: 80%; }
+  .side-menu-list__link {
+    color: white !important; }

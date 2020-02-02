@@ -8,7 +8,7 @@
 		position: fixed;
 		top: 0;
 		width: 100%;
-		z-index: 11111;
+		z-index: 1000;
 		box-shadow: 0 1px 0.3rem rgba($primary-color, .3);
 		padding-top: 0;
 		background-color: white;
@@ -132,15 +132,32 @@
 		}
 	}
 
-	&__button:hover &__icon {
+	// &__button:hover &__icon {
+	// 	background-color: transparent;
+	// }
+	// &__button:hover &__icon::before {
+	// 	top: 0;
+	// 	transform: rotate(135deg);
+	// }
+	// &__button:hover &__icon::after {
+	// 	top: 0;
+	// 	transform: rotate(-135deg);
+	// }
+
+	.navbar-btn .navbar-icon {
 		background-color: transparent;
 	}
-	&__button:hover &__icon::before {
+
+	.navbar-btn .navbar-icon::before {
 		top: 0;
 		transform: rotate(135deg);
 	}
-	&__button:hover &__icon::after {
+
+	.navbar-btn .navbar-icon::after {
 		top: 0;
 		transform: rotate(-135deg);
 	}
+
+
+	
 }
