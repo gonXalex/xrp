@@ -317,7 +317,8 @@ body {
       .navbar__link:visited, .navbar__link:link {
         padding: 1rem 0; } }
   .navbar__icon {
-    position: relative; }
+    position: relative;
+    z-index: 999999; }
     .navbar__icon, .navbar__icon::after, .navbar__icon::before {
       display: inline-block;
       width: 3rem;
@@ -746,22 +747,18 @@ body {
 .side-menu {
   display: none;
   position: absolute;
-  width: 35%;
+  width: 50%;
   height: 100vh;
   background-color: #171717;
-  border-left: 1px solid #fff;
   top: 0;
-  right: -36%;
-  transition: right .3s ease-in-out; }
+  left: -51%;
+  transition: left .3s ease-in-out; }
   @media only screen and (max-width: 50rem) {
     .side-menu {
       display: flex; } }
 
-.navbar-icon-close, .navbar-icon-close::after, .navbar-icon-close::before {
-  background-color: white; }
-
 .side-menu-show {
-  right: 0; }
+  left: 0; }
 
 .side-menu-list {
   padding-top: 6.5rem; }

@@ -492,25 +492,38 @@
                     let sideMenu = document.querySelector('.side-menu');
                     let sideButton = document.querySelector('.navbar__button');
                     let sideButtonIcon = document.querySelector('.navbar__icon');
+                    let pageOverlay;
 
-                    sideButton.addEventListener('click', () => {
+                    function removeClassList() {    
+                        page.classList.remove("page-overlay");
+                        sideMenu.classList.remove("side-menu-show");
+                        sideButton.classList.remove("navbar-btn");
+                        sideButtonIcon.classList.remove("navbar-icon");
 
-                        if(sideMenu.classList.contains("side-menu-show")) {             
-                            
-                            page.classList.remove("page-overlay");
-                            sideMenu.classList.remove("side-menu-show");
-                            sideButton.classList.remove("navbar-btn");
-                            sideButtonIcon.classList.remove("navbar-icon", "navbar-icon-close");
-                            return;
-                        }
+                    }
 
+                    function addClassList () {
                         page.classList.add("page-overlay");
                         sideMenu.classList.add("side-menu-show");
                         sideButton.classList.add("navbar-btn");
-                        sideButtonIcon.classList.add("navbar-icon", "navbar-icon-close");
-                        
-                        
+                        sideButtonIcon.classList.add("navbar-icon");
+                    }
+
+                    sideButton.addEventListener('click', () => {
+
+                        if(sideMenu.classList.contains("side-menu-show")) {  
+                            removeClassList()
+                            return;
+
+                        }
+                        addClassList()
                     });
+
+                    page.addEventListener('click', () => {
+                        removeClassList()
+                                
+                    })
+
                 }
 
 

@@ -92,6 +92,7 @@
 
 	&__icon {
 		position: relative;
+		z-index: 999999;
 
 		&,
 		&::after,
@@ -157,7 +158,4 @@
 		top: 0;
 		transform: rotate(-135deg);
 	}
-
-
-	
 }
