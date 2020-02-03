@@ -471,7 +471,8 @@
                     let sideMenu = document.querySelector('.side-menu');
                     let sideButton = document.querySelector('.navbar__button');
                     let sideButtonIcon = document.querySelector('.navbar__icon');
-                    let pageOverlay;
+                    let listItem = document.querySelectorAll('.side-menu-list__item')
+
 
                     function removeClassList() {    
                         page.classList.remove("page-overlay");
@@ -503,6 +504,13 @@
                                 
                     })
 
+                    listItem.forEach( item => {
+                        item.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            removeClassList()       
+                        })
+                    })
+
                 }
 
                 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -514,6 +522,8 @@
                         });
                     });
                 });
+
+                
 
 
                 window.addEventListener('scroll', checkPosition);
