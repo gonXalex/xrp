@@ -4,49 +4,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
-
-        <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-
-
-
-        <!--<link rel="stylesheet" href="css/icon-font.css">-->
-
-        <link rel="stylesheet" href="css/style.css">
         
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="icon" type="image/svg" href="img/svg/flag.svg">
-      
-        <title>XRP</title>
 
-        <style>
-            @keyframes fade-in {
-                from {opacity: 0; transform: scale(.7,.7)}
-                to {opacity: 1;}
-            }
-            .fade-in-element {
-                animation: fade-in 1s;
-            }
-            .hidden {
-                opacity: 0;
-            }
-        </style>
+        <title>XRP</title>
     </head>
 
-    <body>
+    <body >
         <div class="page-overlay-container"></div>
         <header class="header header__fixed" id="nav_bar">
             <div class="container">
                 <nav class="navbar">
                     <div class="navbar__logo">XPR</div>
                     <ul class="navbar__list">
-                        <li class="navbar__item"><a href="#" class="navbar__link">Inicio</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link">Nosotros</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link">Servicios</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link">Proyectos</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link">Equipo</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link">Contacto</a></li>
+                        <li class="navbar__item"><a href="#home-link" class="navbar__link">Inicio</a></li>
+                        <li class="navbar__item"><a href="#about-link" class="navbar__link">Nosotros</a></li>
+                        <li class="navbar__item"><a href="#services-link" class="navbar__link">Servicios</a></li>
+                        <li class="navbar__item"><a href="#works-link" class="navbar__link">Proyectos</a></li>
+                        <li class="navbar__item"><a href="#team-link" class="navbar__link">Equipo</a></li>
+                        <li class="navbar__item"><a href="#contact-link" class="navbar__link">Contacto</a></li>
                     </ul>
                     <div class="navbar__button">
                         <span class="navbar__icon"></span>
@@ -54,19 +33,19 @@
 
                     <div class="side-menu">
                         <ul class="side-menu-list">
-                            <li class="navbar__item side-menu-list__item"><a href="#" class="navbar__link side-menu-list__link">Inicio</a></li>
-                            <li class="navbar__item side-menu-list__item"><a href="#" class="navbar__link side-menu-list__link">Sobre Nosotros</a></li>
-                            <li class="navbar__item side-menu-list__item"><a href="#" class="navbar__link side-menu-list__link">Servicios</a></li>
-                            <li class="navbar__item side-menu-list__item"><a href="#" class="navbar__link side-menu-list__link">Proyectos</a></li>
-                            <li class="navbar__item side-menu-list__item"><a href="#" class="navbar__link side-menu-list__link">Equipo</a></li>
-                            <li class="navbar__item side-menu-list__item"><a href="#" class="navbar__link side-menu-list__link">Contacto</a></li>
+                            <li class="navbar__item side-menu-list__item"><a href="#home-link" class="navbar__link side-menu-list__link">Inicio</a></li>
+                            <li class="navbar__item side-menu-list__item"><a href="#about-link" class="navbar__link side-menu-list__link">Sobre Nosotros</a></li>
+                            <li class="navbar__item side-menu-list__item"><a href="#services-link" class="navbar__link side-menu-list__link">Servicios</a></li>
+                            <li class="navbar__item side-menu-list__item"><a href="#works-link" class="navbar__link side-menu-list__link">Proyectos</a></li>
+                            <li class="navbar__item side-menu-list__item"><a href="#team-link" class="navbar__link side-menu-list__link">Equipo</a></li>
+                            <li class="navbar__item side-menu-list__item"><a href="#contact-link" class="navbar__link side-menu-list__link">Contacto</a></li>
                         </ul>
                     </div>                    
                 </nav>                
             </div>    
         </header>
 
-        <div class="hero">
+        <div id="home-link" class="hero">
             <div class="hero__content">
                 <div class="container">
                     <div class="hero__title">
@@ -90,7 +69,7 @@
                 </div>                
             </div>
         </div>
-        <section class="services services-container">
+        <section id='about-link' class="services services-container">
             <div class="container">
                 <div class="services__side services__side--right">
 
@@ -135,7 +114,7 @@
             </div>
         </section>
 
-        <section class="services services-container">
+        <section id="services-link" class="services services-container">
             <div class="container">
                 <div class="services__side">
                     <div class="section-title services__title">Nuestros Servicios</div>         
@@ -162,7 +141,7 @@
             <div class="services__img services__img--2"></div> 
         </section>
 
-        <section class="works">
+        <section id="works-link" class="works">
             <div class="container">
 
                 <div class="section-header-container">
@@ -244,7 +223,7 @@
             </div>
         </section>
 
-        <section class="team">
+        <section id="team-link" class="team">
             <div class="container">
                 <div class="section-title">
                     <h3>Increíble Equipo</h3>
@@ -340,7 +319,7 @@
         </section>
 
 
-        <section class="section__contact">
+        <section id="contact-link" class="section__contact">
                 <div class="container">
                     <div class="contact">
                         <div class="section-title contact__title">
@@ -525,6 +504,16 @@
                     })
 
                 }
+
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+
+                        document.querySelector(this.getAttribute('href')).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    });
+                });
 
 
                 window.addEventListener('scroll', checkPosition);
